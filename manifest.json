@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Table Cell Selector",
+  "version": "1.0",
+  "description": "Seleciona células de tabelas como no Excel (Ctrl+Click, Ctrl+Shift+Seta)",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
